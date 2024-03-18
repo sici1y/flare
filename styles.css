@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Trirong";
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* TOP PART OF PAGE -  TITLE */
+.titleBlock {
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    width: 100%;
+    display: flex;
+}
+
+.title {
+    font-size: 2.25vw;
+
+}
+
+.aboutUs,
+.mainPage,
+.dot {
+    padding-left: 5vw;
+    font-weight: lighter;
+    font-size: 1vw;
+    margin: auto;
+}
+
+.dot {
+    font-size: 2vw;
+}
+
+#sunIcon {
+    font-size: 1vw;
+    position: absolute;
+    top: 32%;
+    right: 6%;
+    color: #737373;
+    transition: color 1s ease;
+}
+
+/* -- SPIN SUN ICON ON HOVER --*/
+#sunIcon:hover {
+    color: black;
+    font-size: 1.05vw;
+}
+
+.fa-spin-hover:hover {
+    cursor: pointer;
+    -webkit-animation: fa-spin 2s infinite linear;
+    -moz-animation: fa-spin 2s infinite linear;
+    -o-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+}
+
+/* -- DROPDOWN -- */
+.dropdown {
+    position: absolute;
+    right: 4%;
+    top: 70%;
+    display: none;
+}
+
+#sunIcon:hover + .dropdown {
+    display: block;
+}
